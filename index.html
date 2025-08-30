@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Machine Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ATM Machine Simulation</h1>
+
+    <div class="container">
+
+        <div class="atm-simulation">
+            <div class="card-slot">
+                <div class="card" id="atm-card"></div>
+            </div>
+            <div class="atm-screen" id="atm-screen">Welcome to Our ATM
+Please insert your card (click "Insert Card")</div>
+            <div class="keypad">
+                <button class="action-btn" onclick="atmAction('balance')">Check Balance</button>
+                <button class="action-btn" onclick="atmAction('deposit')">Deposit</button>
+                <button class="action-btn" onclick="atmAction('withdraw')">Withdraw</button>
+                <button onclick="pressKey('7')">7</button>
+                <button onclick="pressKey('8')">8</button>
+                <button onclick="pressKey('9')">9</button>
+                <button onclick="pressKey('4')">4</button>
+                <button onclick="pressKey('5')">5</button>
+                <button onclick="pressKey('6')">6</button>
+                <button onclick="pressKey('1')">1</button>
+                <button onclick="pressKey('2')">2</button>
+                <button onclick="pressKey('3')">3</button>
+                <button class="clear-btn" onclick="clearInput()">Clear</button>
+                <button onclick="pressKey('0')">0</button>
+                <button class="enter-btn" onclick="enterPin()">Enter</button>
+            </div>
+            <div class="cash-slot">
+                <div class="cash" id="cash"></div>
+            </div>
+            <button onclick="resetATM()" style="margin-top: 20px; width: 100%;">Reset ATM</button>
+            <button id="insert-card-btn" onclick="insertCard()" style="margin-top: 10px; width: 100%;">Insert Card</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

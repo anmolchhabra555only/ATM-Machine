@@ -1,0 +1,150 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.code-container {
+  flex: 1;
+  background-color: #282c34;
+  color: #abb2bf;
+  padding: 15px;
+  border-radius: 8px;
+  overflow: auto;
+  height: 600px;
+}
+
+.atm-simulation {
+  flex: 1;
+  background-color: #152238;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: white;
+  height: 600px;
+}
+
+.atm-screen {
+  background-color: #e0e0e0;
+  height: 250px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: monospace;
+  overflow-y: auto;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4a6fa5;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #5c8ae6;
+}
+
+.action-btn {
+  background-color: #e67e22;
+}
+
+.action-btn:hover {
+  background-color: #f39c12;
+}
+
+.clear-btn {
+  background-color: #c0392b;
+}
+
+.clear-btn:hover {
+  background-color: #e74c3c;
+}
+
+.enter-btn {
+  background-color: #27ae60;
+}
+
+.enter-btn:hover {
+  background-color: #2ecc71;
+}
+
+.card-slot {
+  width: 100%;
+  height: 40px;
+  background-color: #888;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  width: 60px;
+  height: 40px;
+  background-color: #3a6ea5;
+  position: absolute;
+  right: -70px;
+  transition: right 0.5s;
+  border-radius: 5px;
+}
+
+.inserted {
+  right: 10px;
+}
+
+.cash-slot {
+  width: 100%;
+  height: 20px;
+  background-color: #555;
+  border-radius: 3px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cash {
+  width: 60px;
+  height: 20px;
+  background-color: #ddd;
+  position: absolute;
+  left: -70px;
+  transition: left 0.5s;
+}
+
+.dispensed {
+  left: 50%;
+}
+
+h1, h2 {
+  color: #152238;
+  margin-bottom: 5px;
+}
+
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.4;
+}
